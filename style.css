@@ -104,3 +104,23 @@ a[href="#design"] {
     transform: scale(1,1);
   }
 }
+
+.translate{
+  animation-name: translate;
+  animation-duration: 1.2s;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes translate{
+  0%{
+   transform: translateX(0);
+  }
+
+  50%{
+   transform: translateX(5em);
+  }
+
+  100%{
+   transform: translateX(0);
+  }
+}

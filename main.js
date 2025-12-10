@@ -38,3 +38,15 @@ function scaleHandler() {
 }
 //stap 4: animationevent, haal class weg na animatie
 scaleLink.addEventListener('animationed', scaleHandler)
+
+
+//stap 1: queryselector
+let translateLink = document.querySelector('a[href="#and"]')
+//stap 2: eventListener
+translateLink.addEventListener('click', translateHandler)
+//stap 3: classList
+function translateHandler() {
+  translateLink.classList.toggle('translate')
+}
+//stap 4: animationevent
+translateLink.addEventListener('animationed', translateHandler)
